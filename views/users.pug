@@ -1,0 +1,8 @@
+extends layout
+
+block content
+ div
+  .row
+   each user in res 
+    .col-12
+    h1 #{user.name}

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .container 
+  //-  form(method='post',action='/elleh')
+  form(method='post',action='/registrati')
+    input.tube-control(type='text',placeholder='username', name='username')
+    input.tube-control(type='text',placeholder='email', name='email')
+    input.tube-control(type='password',placeholder='password', name='password')
+    input.tube-button(type='submit',value='Registrati')

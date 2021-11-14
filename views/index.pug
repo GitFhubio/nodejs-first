@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p.ciao elleh
+  p#speciale elleh
+  a(href=`${link}`) #{number}
+  ul 
+   each item in array 
+    if item != "ciao"
+      li #{item}
+    else 
+      li sono il 3

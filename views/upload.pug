@@ -1,0 +1,8 @@
+extends layout
+
+block content
+ if fileName!= null 
+  div.alert-success file #{fileName} caricato con successo
+ form(method="post",action="/upload",enctype="multipart/form-data")
+   input.tube-control(type="file", name="filetoupload")
+   button.tube-button(type="submit") upload

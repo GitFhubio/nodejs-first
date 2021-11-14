@@ -31,7 +31,7 @@ router.post('/elleh', function(req, res, next) {
 });
 router.get('/elleh', function(req, res, next) {
   console.log(users);
-  let name=req.query.name;
+  let name=req.query.name; //inserisco nellurl ?name=pippo
   let user=users.find(el=> el.name==name);
 // res.send(name)
 // res.send(user);
